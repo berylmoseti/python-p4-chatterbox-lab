@@ -4,7 +4,7 @@ from datetime import datetime
 db = SQLAlchemy()
 
 class Message(db.Model):
-    __tablename__ = 'messages'
+    __tablename__ = "messages"
 
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String, nullable=False)
